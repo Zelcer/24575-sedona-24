@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Артём Трухан](https://up.htmlacademy.ru/htmlcss/24/user/24575).
-* Наставник: `[Алёна Сиприкова] (https://htmlacademy.ru/profile/asiprikova)`.
+* Наставник: [Алёна Сиприкова](https://up.htmlacademy.ru/htmlcss/24/user/549115).
 
 ---
 
