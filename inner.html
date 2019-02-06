@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
@@ -74,7 +77,7 @@
             </div>
           </div>
         </fieldset>
-        <button class="filter-button" type="submit">Показать</button>
+        <button class="button filter-button" type="submit">Показать</button>
       </form>
       </section>
       <section class="sorting">
@@ -100,14 +103,14 @@
                 <img src="img/jpg/hotels/hotel-amara.jpg" width="135" height="90" alt="Гостиница Amara Resort & SPA">
               </td>
               <td>
-                <p>Amara Resort & SPA</p>
+                <p class="search-result-hotel"><a href="#">Amara Resort & SPA</a></p>
                 <p>Гостиница</p>
-                <p>от 4000 р.</p>
-                <a class="button" href="#">Подробнее</a>
-                <a class="button" href="#">Забронировать</a>
+                <p class="hotel-price">от 4000 р.</p>
+                <a class="button button-more" href="#">Подробнее</a>
+                <a class="button button-booking" href="#">Забронировать</a>
               </td>
               <td>
-                <p>
+                <p class="hotel-stars">
                   <span>&#9733;</span>
                   <span>&#9733;</span>
                   <span>&#9733;</span>
@@ -121,14 +124,14 @@
                 <img src="img/jpg/hotels/hotel-desert.jpg" width="135" height="90" alt="Мотель Desert Quail INN">
               </td>
               <td>
-                <p>Desert Quail INN</p>
+                <p class="search-result-hotel"><a href="#">Desert Quail INN</a></p>
                 <p>Мотель</p>
-                <p>От 3000 р.</p>
-                <a class="button" href="#">Подробнее</a>
-                <a class="button" href="#">Забронировать</a>
+                <p class="hotel-price">От 3000 р.</p>
+                <a class="button button-more" href="#">Подробнее</a>
+                <a class="button button-booking" href="#">Забронировать</a>
               </td>
               <td>
-                <p>
+                <p class="hotel-stars">
                   <span>&#9733;</span>
                   <span>&#9733;</span>
                   <span>&#9733;</span>
@@ -141,14 +144,14 @@
                 <img src="img/jpg/hotels/hotel-villas.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
               </td>
               <td>
-                <p>Villas at Poco Diablo</p>
+                <p class="search-result-hotel"><a href="#">Villas at Poco Diablo</a></p>
                 <p>Апартаменты </p>
-                <p>От 2000 р.</p>
-                <a class="button" href="#">Подробнее</a>
-                <a class="button" href="#">Забронировать</a>
+                <p class="hotel-price">От 2000 р.</p>
+                <a class="button button-more" href="#">Подробнее</a>
+                <a class="button button-booking" href="#">Забронировать</a>
               </td>
               <td>
-                <p>
+                <p class="hotel-stars">
                   <span>&#9733;</span>
                   <span>&#9733;</span>
                 </p>
@@ -162,7 +165,7 @@
     <footer class="footer">
       <p class="tag">#visitsedona</p>
       <div class="footer-social">
-        <ul>
+        <ul class="social-list">
           <li><a href="#">Twitter</a></li>
           <li><a href="#">Facebook</a></li>
           <li><a href="#">Youtube</a></li>
