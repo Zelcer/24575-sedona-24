@@ -5,8 +5,8 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
-  font-weight: 700;
-  color: #000000;
+  font-weight: 400;
+  color: #333333;
   text-transform: uppercase;
 
   background-color: #f2f2f2;
@@ -14,6 +14,14 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .main-nav {
@@ -36,6 +44,8 @@ a {
 }
 
 .site-nav a {
+  font-weight: 700;
+
   color: #000000;
 }
 
@@ -52,37 +62,31 @@ a {
   color: #766357;
 }
 
-.site-nav-current a:hover,
-.site-nav-current a:focus,
-.site-nav-current a:active {
-  color: #766357;
-}
-
 .intro {
   background-image: url("../img/jpg/background-intro.jpg");
   background-repeat: no-repeat;
   background-position: top center;
 }
 
-.container {
-  background-color: #ffffff;
-}
-
 .page-title {
   font-size: 21px;
-
   text-align: center;
+  color: #000000;
 }
 
-.page-title + p {
-  font-weight: 400;
-
+.page-description {
   text-align: center;
-  color: #333333;
 }
 
 .feature-item {
+  line-height: 21px;
+  text-align: center;
   background-color: #eeeeee;
+}
+
+.feature-item h2 {
+  font-size: 21px;
+  color: #000000;
 }
 
 .feature-item-full {
@@ -91,26 +95,8 @@ a {
   background-color: #81b3d2;
 }
 
-.feature-item h2 {
-  font-size: 21px;
-  line-height: 21px;
-
-  text-align: center;
-}
-
-.feature-number {
-  line-height: 21px;
-  font-weight: 400;
-
-  text-align: center;
-}
-
-.feature-number + p,
-.feature-list-item p {
-  line-height: 21px;
-  font-weight: 400;
-
-  text-align: center;
+.feature-item-full h2 {
+  color: #ffffff;
 }
 
 .features-list {
@@ -121,22 +107,23 @@ a {
   background-color: #ffffff;
 }
 
+.search-hotel {
+  text-align: center;
+}
+
 .search-hotel h2 {
   font-size: 30px;
   line-height: 36px;
-
-  text-align: center;
+  color: #000000;
 }
 
 .search-hotel > p {
   line-height: 24px;
-  font-weight: 400;
-
-  color: #333333;
-  text-align: center;
 }
 
 .button-search {
+  font-weight: 700;
+
   background-color:#766357;
 }
 
@@ -155,6 +142,12 @@ a {
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
+.search-item-label,
+.search-item-input {
+  font-weight: 700;
+  color: #000000;
+}
+
 .search-item-input {
   background-color: #f2f2f2;
   border: none;
@@ -169,14 +162,9 @@ a {
   border: 2px solid #E5E5E5;
 }
 
-.search-item-input::placeholder {
+.button-search-hotel {
   font-weight: 700;
 
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.button-search-hotel {
   background-color: #81B3D2;
 }
 
@@ -204,6 +192,7 @@ a {
 .filter legend {
   font-size: 16px;
   line-height: 21px;
+  font-weight: 700;
 
   color: #ffffff;
 }
@@ -214,7 +203,7 @@ a {
 
 .filter-option label,
 .range-data label,
-.range-data input::placeholder {
+.range-data input {
   line-height: 21px;
   font-weight: 400;
 
@@ -239,15 +228,16 @@ a {
   background-color: #ffffff;
 }
 
-.found {
-  font-size: 21px;
-}
-
-.found + p,
-.sorting-link {
+.sorting {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+  color: #000000;
+}
+
+.found {
+  font-size: 21px;
+  font-weight: 700;
 }
 
 .sorting-list {
@@ -269,13 +259,10 @@ a {
   text-decoration: none;
 }
 
-.sorting-link-active {
-  color: #81B3D2;
-  text-decoration: none;
-}
-
+.sorting-link-active,
 .sorting-link-active:active {
   color: #81B3D2;
+  text-decoration: none;
 }
 
 .sorting-up,
@@ -295,32 +282,32 @@ a {
   border-bottom: 1px solid #E5E5E5;
 }
 
-.search-result-hotel a {
+.search-result-hotel-name a {
   font-size: 21px;
+  font-weight: 700;
 
   color: #000000;
 }
 
-.search-result-hotel a:hover,
-.search-result-hotel a:focus {
+.search-result-hotel-name a:hover,
+.search-result-hotel-name a:focus {
   color: #81B3D2;
 }
 
-.search-result-hotel a:active {
+.search-result-hotel-name a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.search-result-hotel + p,
+.search-result-hotel,
 .hotel-price {
   line-height: 21px;
   font-weight: 400;
-
-  color: #333333;
 }
 
 .button-more,
 .button-booking {
   line-height: 21px;
+  font-weight: 700;
 }
 
 .button-more {
@@ -372,6 +359,8 @@ a {
 
 .tag {
   font-size: 21px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .social-list {
@@ -384,4 +373,5 @@ a {
 
 .footer-copyright span {
   font-weight: 400;
+  color: #000000;
 }
