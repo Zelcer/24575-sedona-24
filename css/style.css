@@ -143,7 +143,8 @@ a {
 }
 
 .search-item-label,
-.search-item-input {
+.search-item-input,
+.search-item-input::placeholder {
   font-weight: 700;
   color: #000000;
 }
@@ -203,7 +204,8 @@ a {
 
 .filter-option label,
 .range-data label,
-.range-data input {
+.range-data input,
+.range-data input::placeholder {
   line-height: 21px;
   font-weight: 400;
 
@@ -268,6 +270,18 @@ a {
 .sorting-up,
 .sorting-down {
   color: #cacaca;
+}
+
+.sorting-up:hover,
+.sorting-up:focus,
+.sorting-down:hover,
+.sorting-down:focus {
+  color: #000000;
+}
+
+.sorting-up:active,
+.sorting-down:active {
+  color: #81B3D2;
 }
 
 .search-results {
