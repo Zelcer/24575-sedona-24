@@ -24,10 +24,6 @@ a {
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
-.main-nav {
-  background-color: #ffffff;
-}
-
 .button {
   font: inherit;
 
@@ -39,7 +35,19 @@ a {
   border: none;
 }
 
+.main-nav {
+  display: flex;
+}
+
+.main-header-logo {
+  width: 138px;
+  height: 71px;
+}
+
 .site-nav {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 
@@ -63,30 +71,65 @@ a {
 }
 
 .intro {
+  min-height: 510px;
+  margin-bottom: 60px;
+
   background-image: url("../img/jpg/background-intro.jpg");
   background-repeat: no-repeat;
   background-position: top center;
 }
 
 .page-title {
+  width: 440px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+
   font-size: 21px;
   text-align: center;
   color: #000000;
 }
 
 .page-description {
+  margin: 0;
+  margin-bottom: 50px;
   text-align: center;
 }
 
+.features {
+  margin-bottom: 50px;
+}
+
+.feature-row {
+  display: flex;
+}
+
 .feature-item {
+  width: 400px;
+  padding-top: 46px;
+  padding-bottom: 64px;
+
   line-height: 21px;
   text-align: center;
   background-color: #eeeeee;
 }
 
 .feature-item h2 {
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+
   font-size: 21px;
   color: #000000;
+}
+
+.feature-number {
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.feature-description {
+  width: 300px;
+  margin: 0 auto;
 }
 
 .feature-item-full {
@@ -100,6 +143,11 @@ a {
 }
 
 .features-list {
+  display: flex;
+
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 
@@ -112,12 +160,19 @@ a {
 }
 
 .search-hotel h2 {
+  margin: 0;
+  margin-bottom: 30px;
+
   font-size: 30px;
   line-height: 36px;
   color: #000000;
 }
 
 .search-hotel > p {
+  width: 430px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+
   line-height: 24px;
 }
 
@@ -181,12 +236,18 @@ a {
 }
 
 .filters {
+  margin-bottom: 25px;
+
   background-image: url("../img/jpg/background-filter.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.filter fieldset {
+.filter {
+  display: flex;
+}
+
+.filter-form-group {
   border: none;
 }
 
@@ -237,12 +298,25 @@ a {
   color: #000000;
 }
 
+.sorting-column {
+  display: flex;
+}
+
 .found {
+  margin-right: 50px;
+
   font-size: 21px;
   font-weight: 700;
 }
+.sorting-type {
+  margin-right: 40px;
+}
 
 .sorting-list {
+  padding: 0;
+  margin: 0;
+  margin-right: 505px;
+
   list-style: none;
 }
 
@@ -285,6 +359,8 @@ a {
 }
 
 .search-results {
+  width: 1056px;
+
   border-collapse: collapse;
 }
 
@@ -368,6 +444,9 @@ a {
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+
   background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -378,6 +457,9 @@ a {
 }
 
 .social-list {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 
