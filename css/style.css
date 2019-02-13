@@ -76,7 +76,7 @@ a {
 
   background-image: url("../img/jpg/background-intro.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
 }
 
 .page-title {
@@ -101,12 +101,22 @@ a {
 
 .feature-row {
   display: flex;
+  min-height: 256px;
+}
+
+.feature-img img {
+  height: auto;
+  width: 100%;
 }
 
 .feature-item {
   width: 400px;
+  height: 256px;
   padding-top: 46px;
   padding-bottom: 64px;
+  padding-left: 60px;
+  padding-right: 60px;
+  box-sizing: border-box;
 
   line-height: 21px;
   text-align: center;
@@ -128,8 +138,7 @@ a {
 }
 
 .feature-description {
-  width: 300px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .feature-item-full {
@@ -359,7 +368,7 @@ a {
 }
 
 .search-results {
-  width: 1056px;
+  width: 100%;
 
   border-collapse: collapse;
 }
