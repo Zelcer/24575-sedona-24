@@ -16,6 +16,26 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .wrap {
   width: 1200px;
   margin: 0 auto;
@@ -35,23 +55,51 @@ a {
   border: none;
 }
 
+.header {
+  padding: 0 73px;
+}
+
 .main-nav {
+  position: relative;
+  z-index: 10;
+
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
 }
 
 .main-header-logo {
+  order: 1;
+  align-self: flex-start;
   width: 138px;
   height: 71px;
 }
 
 .site-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 460px;
   padding: 0;
   margin: 0;
 
   list-style: none;
 }
 
+.site-nav-right {
+  order:2;
+}
+
+.site-nav-left li:last-child {
+  margin-right: 130px;
+}
+
+.site-nav-right li:first-child {
+  margin-left: 130px;
+}
+
 .site-nav a {
+  display: block;
   font-weight: 700;
 
   color: #000000;
@@ -71,12 +119,29 @@ a {
 }
 
 .intro {
+  position: relative;
+
   min-height: 510px;
   margin-bottom: 60px;
 
-  background-image: url("../img/jpg/background-intro.jpg");
+  background-image: 
+    url("../img/welcome-intro.png"),
+    url("../img/jpg/background-intro.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, top;
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+
+  width: 1200px;
+  height: 59px;
+
+  background-image: url("../img/intro-polygon.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 0;
 }
 
 .page-title {
