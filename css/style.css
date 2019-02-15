@@ -295,9 +295,16 @@ img {
 }
 
 .button-search {
+  display: block;
+  width: 568px;
+  margin: 0 auto;
+  padding: 30px 139px;
+
+  font-size: 21px;
   font-weight: 700;
 
   background-color:#766357;
+  box-sizing: border-box;
 }
 
 .button-search:hover,
@@ -309,6 +316,14 @@ img {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #503E33;
+}
+
+.map {
+  height: 593px;
+
+  background-image: url("../img/jpg/map.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .search-hotel-modal {

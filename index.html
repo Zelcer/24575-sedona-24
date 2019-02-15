@@ -87,35 +87,6 @@
           <h2>Заинтересовались?</h2>
           <p>Укажите предлгаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне.</p>
           <a class="button button-search" href="#">Поиск гостиницы в Седоне</a>
-          <div class="search-hotel-modal">
-            <form class="form-search-hotel" action="https://echo.htmlacademy.ru" method="POST">
-              <p class="search-item">
-                <label class="search-item-label">
-                  Дата заезда
-                  <input class="search-item-input input-calendar" type="text" name="arrival" placeholder="24 апреля 2017">
-                  <span class="icon-calendar"></span>
-                </label>
-              </p>
-              <p class="search-item">
-                <label class="search-item-label">
-                  Дата выезда
-                  <input class="search-item-input input-calendar" type="text" name="departure" placeholder="4 июля 2017">
-                  <span class="icon-calendar"></span>
-                </label>
-              </p>
-              <p class="search-item">
-                <label class="search-item-label">
-                  Взрослые
-                  <input class="search-item-input" type="number" name="adults" min="0" max="5" step="1" placeholder="2">
-                </label>
-                <label class="search-item-label">
-                  Дети
-                  <input class="search-item-input" type="number" name="children" min="0" max="5" step="1" placeholder="0">
-                </label>
-              </p>
-              <button class="button button-search-hotel" type="submit">Найти</button>
-            </form>
-          </div>
         </section>
         <section class="map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
@@ -135,6 +106,36 @@
           <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/svg/logo/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a>
         </p>
       </footer>
+    </div>
+
+    <div class="search-hotel-modal">
+      <form class="form-search-hotel" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="search-item">
+          <label class="search-item-label">
+            Дата заезда
+            <input class="search-item-input input-calendar" type="text" name="arrival" placeholder="24 апреля 2017">
+            <span class="icon-calendar"></span>
+          </label>
+        </p>
+        <p class="search-item">
+          <label class="search-item-label">
+            Дата выезда
+            <input class="search-item-input input-calendar" type="text" name="departure" placeholder="4 июля 2017">
+            <span class="icon-calendar"></span>
+          </label>
+        </p>
+        <p class="search-item">
+          <label class="search-item-label">
+            Взрослые
+            <input class="search-item-input" type="number" name="adults" min="0" max="5" step="1" placeholder="2">
+          </label>
+          <label class="search-item-label">
+            Дети
+            <input class="search-item-input" type="number" name="children" min="0" max="5" step="1" placeholder="0">
+          </label>
+        </p>
+        <button class="button button-search-hotel" type="submit">Найти</button>
+      </form>
     </div>
   </body>
 </html>
