@@ -373,7 +373,6 @@ img {
 
 .filters {
   height: 217px;
-  margin-bottom: 25px;
   padding: 30px 73px;
 
   background-image: url("../img/jpg/background-filter.jpg");
@@ -609,13 +608,16 @@ img {
   cursor: pointer;
 }
 
-.filter-button:hover {
+.filter-button:hover,
+.filter-button:focus {
   color: #000000;
 
   background-color: #ffffff;
 }
 
 .sorting {
+  padding: 30px 73px;
+
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -627,19 +629,25 @@ img {
 }
 
 .found {
+  margin: 0;
   margin-right: 50px;
 
   font-size: 21px;
   font-weight: 700;
 }
+
 .sorting-type {
+  margin: 0;
   margin-right: 40px;
 }
 
 .sorting-list {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
   padding: 0;
   margin: 0;
-  margin-right: 505px;
+  margin-right: 495px;
 
   list-style: none;
 }
@@ -647,6 +655,8 @@ img {
 .sorting-link {
   color: rgba(0, 0, 0, 0.3);
   text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #81B3D2;
 }
 
 .sorting-link:hover,
@@ -665,21 +675,33 @@ img {
   text-decoration: none;
 }
 
+.sorting-up-down {
+  margin: 0;
+}
+
 .sorting-up,
-.sorting-down {
-  color: #cacaca;
+.sortinf-down {
+  display: inline-block;
 }
 
-.sorting-up:hover,
-.sorting-up:focus,
-.sorting-down:hover,
-.sorting-down:focus {
-  color: #000000;
+.sorting-up {
+  margin-right: 12px;
 }
 
-.sorting-up:active,
-.sorting-down:active {
-  color: #81B3D2;
+.sorting-up:hover path,
+.sorting-up:focus path,
+.sorting-down:hover path,
+.sorting-down:focus path {
+  fill: #000000;
+}
+
+.sorting-up:active path,
+.sorting-down:active path {
+  fill: #81B3D2;
+}
+
+.sorting-down-active path {
+  fill: #81B3D2;
 }
 
 .search-results {

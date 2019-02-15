@@ -71,7 +71,6 @@
                 <input type="text" name="final-price" id="price-up-to" placeholder="3000">
               </div>
               <div class="input-range">
-                <input class="visually-hidden" type="range" name="cost" multiple min="0" max="3000" step="1" data-values="">
                 <div class="range">
                   <div class="white-line"></div>
                   <div class="white-circle circle-left"></div>
@@ -93,8 +92,18 @@
               <li><a class="sorting-link" href="#">По рейтингу</a></li>
             </ul>
             <p class="sorting-up-down">
-              <a class="sorting-up" href="#">Вверх</a>
-              <a class="sorting-down sorting-down-active" href="#">Вниз</a>
+              <a class="sorting-up" href="#">
+                <span class="visually-hidden">Вверх</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path fill="#CACACA" d="M5.5 0L0 10h11z"/>
+                </svg>
+              </a>
+              <a class="sorting-down sorting-down-active" href="#">
+                <span class="visually-hidden">Вниз</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path fill="#CACACA" d="M5.5 10L0 0h11"/>
+                </svg>
+              </a>
             </p>
           </div>
         </section>
