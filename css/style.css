@@ -274,6 +274,7 @@ img {
 }
 
 .search-hotel {
+  position: relative;
   text-align: center;
 }
 
@@ -319,6 +320,8 @@ img {
 }
 
 .map {
+  position: relative;
+
   height: 593px;
 
   background-image: url("../img/jpg/map.jpg");
@@ -579,28 +582,74 @@ img {
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 35px 101px 35px 133px;;
 
   background-color: rgba(255, 255, 255, 0.9);
 }
 
 .tag {
+  margin: 0;
+
   font-size: 21px;
   font-weight: 700;
   color: #000000;
 }
 
 .social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 150px;
   padding: 0;
   margin: 0;
 
   list-style: none;
 }
 
-.social-list a {
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+
   color: #000000;
+
+  background-color: #81B3D2;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669EC0;
+}
+
+.social-button:active {
+  background-color: #5496BD;
+}
+
+.social-button:active path {
+  opacity: 0.3;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 197px;
+  margin: 0;
 }
 
 .footer-copyright span {
   font-weight: 400;
   color: #000000;
+}
+
+.html-academy-link:hover path,
+.html-academy-link:focus path {
+  fill: #81B3D2;
+}
+
+.html-academy-link:active path {
+  fill: #BDBBBC;
 }
