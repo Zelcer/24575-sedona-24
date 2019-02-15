@@ -171,10 +171,7 @@ img {
 
 .feature-item {
   width: 400px;
-  padding-top: 46px;
-  padding-bottom: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 46px 49px 50px;
   box-sizing: border-box;
 
   line-height: 21px;
@@ -223,7 +220,57 @@ img {
 }
 
 .feature-list-item {
+  padding: 159px 55px 83px;
   background-color: #ffffff;
+}
+
+.feature-list-item h2 {
+  position: relative;
+}
+
+.feature-list-item-house h2::after {
+  content: "";
+
+  position: absolute;
+  top: -100px;
+  right: 107px;
+
+  width: 75px;
+  height: 72px;
+
+  background-image: url("../img/svg/features/housing-feature.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feature-list-item-food h2::after {
+  content: "";
+
+  position: absolute;
+  top: -100px;
+  right: 107px;
+
+  width: 75px;
+  height: 70px;
+
+  background-image: url("../img/svg/features/food-feature.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feature-list-item-souvenirs h2::after {
+  content: "";
+
+  position: absolute;
+  top: -100px;
+  right: 107px;
+
+  width: 64px;
+  height: 77px;
+
+  background-image: url("../img/svg/features/souvenirs-feature.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .search-hotel {
