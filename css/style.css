@@ -61,7 +61,7 @@ img {
 
 .main-nav {
   position: relative;
-  z-index: 10;
+  z-index: 1;
 
   display: flex;
   align-items: center;
@@ -718,17 +718,25 @@ img {
   border-bottom: 1px solid #E5E5E5;
 }
 
-.table-img {
-  width: 135px;
-  padding-left: 73px;
-  padding-right: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+.search-results td {
+  padding: 30px 73px;
 }
 
-.table-description {
-  width: 268px;
-  padding-right: 522px;
+.search-results .table-img {
+  width: 135px;
+  padding-right: 30px;
+}
+
+.table-img img {
+  display: block;
+  width: 135px;
+  height: 90px;
+}
+
+.search-results .table-description {
+  width: 768px;
+  padding-left: 0;
+  padding-right: 9px;
 }
 
 .search-result-hotel-name,
@@ -738,7 +746,7 @@ img {
 }
 
 .search-result-hotel-name {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .search-result-hotel-name a {
@@ -761,7 +769,11 @@ img {
   display: flex;
   justify-content: space-between;
   width: 180px;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
+}
+
+.search-result-hotel {
+  width: 100px;
 }
 
 .search-result-hotel,
@@ -772,7 +784,7 @@ img {
 
 .table-button .button {
   display: inline-block;
-  padding: 8px 17px 7px;
+  padding: 4px 17px;
 }
 
 .button-more {
@@ -815,17 +827,20 @@ img {
   background-color: #503E33;
 }
 
-.table-rating {
+.search-results .table-rating {
+  padding-left: 0;
+}
+
+.table-rating-wrapper {
   display: flex;
   flex-direction: column;
-  padding-right: 73px;
 }
 
 .hotel-stars {
   margin: 0;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
+  font-size: 16px;
   text-align: right;
   color: #81B3D2;
 }
@@ -848,9 +863,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 101px 35px 133px;;
-
-  background-color: rgba(255, 255, 255, 0.9);
+  padding: 35px 101px 35px 133px;
 }
 
 .tag {
@@ -865,11 +878,15 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 150px;
+  min-width: 150px;
   padding: 0;
   margin: 0;
 
   list-style: none;
+}
+
+.social-list li {
+  margin-right: 6px;
 }
 
 .social-button {
