@@ -56,7 +56,7 @@ img {
 }
 
 .header {
-  padding: 0 73px;
+  padding: 0 53px;
 }
 
 .main-nav {
@@ -78,24 +78,23 @@ img {
 
 .site-nav {
   display: flex;
-  justify-content: space-between;
-  width: 460px;
+  justify-content: flex-start;
+  width: 478px;
   padding: 0;
   margin: 0;
 
   list-style: none;
 }
 
+.site-nav li {
+  flex-grow: 1;
+  padding: 0 20px;
+}
+
 .site-nav-right {
   order:2;
-}
 
-.site-nav-left li:last-child {
-  margin-right: 130px;
-}
-
-.site-nav-right li:first-child {
-  margin-left: 130px;
+  text-align: right;
 }
 
 .site-nav a {
