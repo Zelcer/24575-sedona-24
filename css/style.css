@@ -38,6 +38,8 @@ img {
 }
 
 .wrap {
+  position: relative;
+
   width: 1200px;
   margin: 0 auto;
 
@@ -817,15 +819,29 @@ img {
   box-sizing: border-box;
 }
 
+/*---Футер---*/
+
 .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 101px 35px 133px;
+  width: 100%;
+  padding: 35px 0;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-inner {
+  position: static;
 }
 
 .tag {
   margin: 0;
+  margin-left: 133px;
 
   font-size: 21px;
   font-weight: 700;
@@ -878,6 +894,7 @@ img {
   align-items: center;
   width: 197px;
   margin: 0;
+  margin-right: 133px;
 }
 
 .footer-copyright span {
@@ -898,7 +915,7 @@ img {
 
 .search-hotel-modal {
   position: absolute;
-  bottom: 279px;
+  bottom: 190px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -923,6 +940,10 @@ img {
   width: 458px;
   margin: 0;
   margin-bottom: 30px;
+}
+
+.search-item:nth-child(3) {
+  margin-bottom: 0;
 }
 
 .search-item-label {
