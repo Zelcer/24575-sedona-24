@@ -299,7 +299,7 @@ img {
 
 .button-search {
   display: block;
-  width: 568px;
+  width: 569px;
   margin: 0 auto;
   padding: 30px 139px;
 
@@ -398,6 +398,7 @@ img {
   display: block;
   cursor: pointer;
   user-select: none;
+  color: #ffffff;
 }
 
 .filter-option label::before {
@@ -480,7 +481,7 @@ img {
 
   height: 36px;
   margin-bottom: 19px;
-  padding: 3px 42px 0 64px;
+  padding-top: 3px;
 
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -501,7 +502,12 @@ img {
   background: #ffffff;
 }
 
+.price-min {
+  margin-left: 60px;
+}
+
 .range-data label {
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -509,9 +515,14 @@ img {
   width: 31px;
   margin: 0;
   padding: 0;
+  color: #ffffff;
 
   background-color: transparent;
   border: none;
+}
+
+.range-data input::placeholder {
+  color: #ffffff;
 }
 
 .input-range {
@@ -601,7 +612,7 @@ img {
 
 .found {
   margin: 0;
-  margin-right: 46px;
+  margin-right: 45px;
 
   font-size: 21px;
   font-weight: 700;
@@ -963,6 +974,7 @@ img {
 
 .search-item-label {
   align-self: center;
+  font-weight: 700;
 }
 
 .search-item-number {
@@ -973,6 +985,7 @@ img {
   width: 38px;
   padding: 5px 0;
 
+  font-weight: 700;
   text-align: center;
   background-color: #f2f2f2;
   border: none;
