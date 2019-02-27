@@ -30,7 +30,7 @@
           <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
             <fieldset class="filter-form-group">
               <legend>Инфраструктура:</legend>
-              <ul>
+              <ul aria-label="Фильтр выбора инфоструктуры">
                 <li class="filter-option">
                   <input class="visually-hidden filter-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
                   <label for="filter-pool">Бассейн</label>
@@ -47,7 +47,7 @@
             </fieldset>
             <fieldset class="filter-form-group">
               <legend>Тип жилья:</legend>
-              <ul>
+              <ul aria-label="Фильтр выбора типа жилья">
                 <li class="filter-option">
                   <input class="visually-hidden filter-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
                   <label for="filter-hotel">Гостиница</label>
@@ -64,7 +64,7 @@
             </fieldset>
             <fieldset class="filter-form-group">
               <legend>Стоимость в сутки (р):</legend>
-              <div class="range-data">
+              <div class="range-data" aria-label="Выбор стоимости в сутки">
                 <label class="price-min" for="price-from">От</label>
                 <input type="text" name="start-price" id="price-from" placeholder="0">
                 <label for="price-up-to">До</label>
@@ -77,7 +77,7 @@
                   <div class="white-circle circle-right"></div>
                 </div>
               </div>
-              <button class="button filter-button" type="submit">Показать</button>
+              <button class="button filter-button" type="submit" aria-label="Показать результаты фильтра">Показать</button>
             </fieldset>
           </form>
         </section>
@@ -86,7 +86,7 @@
           <div class="sorting-column">
             <p class="found">Найдено: <span class="found-number">3</span></p>
             <p class="sorting-type">Сортировка:</p>
-            <ul class="sorting-list">
+            <ul class="sorting-list" aria-label="Сортировать найденное жильё по">
               <li><a class="sorting-link sorting-link-active" href="#">По цене</a></li>
               <li><a class="sorting-link" href="#">По типу</a></li>
               <li><a class="sorting-link" href="#">По рейтингу</a></li>
@@ -117,7 +117,7 @@
                 </td>
                 <td class="table-description">
                   <div class="table-description-wrapper">
-                    <p class="search-result-hotel-name"><a href="#">Amara Resort & SPA</a></p>
+                    <p class="search-result-hotel-name" aria-label="Пятизвёздочная гостиница "><a href="#">Amara Resort & SPA</a></p>
                     <div class="table-hotel-price">
                       <p class="search-result-hotel">Гостиница</p>
                       <p class="hotel-price">от 4000 р.</p>
@@ -136,7 +136,7 @@
                       <span>&#9733;</span>
                       <span>&#9733;</span>
                     </p>
-                    <p class="final-rating">Рейтинг: 8,5</p>
+                    <p class="final-rating" aria-label="рейтинг 8.5">Рейтинг: 8,5</p>
                   </div>
                 </td>
               </tr>
@@ -146,7 +146,7 @@
                 </td>
                 <td class="table-description">
                   <div class="table-description-wrapper">
-                    <p class="search-result-hotel-name"><a href="#">Desert Quail INN</a></p>
+                    <p class="search-result-hotel-name" aria-label="трёхзвёздочный мотель"><a href="#">Desert Quail INN</a></p>
                     <div class="table-hotel-price">
                       <p class="search-result-hotel">Мотель</p>
                       <p class="hotel-price">От 3000 р.</p>
@@ -164,7 +164,7 @@
                       <span>&#9733;</span>
                       <span>&#9733;</span>
                     </p>
-                    <p class="final-rating">Рейтинг: 8,9</p>
+                    <p class="final-rating" aria-label="рейтинг 8.9">Рейтинг: 8,9</p>
                   </div>
                 </td>
               </tr>
@@ -174,7 +174,7 @@
                 </td>
                 <td class="table-description">
                   <div class="table-description-wrapper">
-                    <p class="search-result-hotel-name"><a href="#">Villas at Poco Diablo</a></p>
+                    <p class="search-result-hotel-name" aria-label="двухзвёздочные апартаменты"><a href="#">Villas at Poco Diablo</a></p>
                     <div class="table-hotel-price">
                       <p class="search-result-hotel">Апартаменты </p>
                       <p class="hotel-price">От 2000 р.</p>
@@ -191,7 +191,7 @@
                       <span>&#9733;</span>
                       <span>&#9733;</span>
                     </p>
-                    <p class="final-rating">Рейтинг: 9,2</p>
+                    <p class="final-rating" aria-label="рейтинг 9.2">Рейтинг: 9,2</p>
                   </div>
                 </td>
               </tr>
@@ -202,7 +202,7 @@
       <footer class="footer footer-inner">
         <p class="tag">#visitsedona</p>
         <div class="footer-social">
-          <ul class="social-list">
+          <ul class="social-list" aria-label="Наши социальные сети">
             <li>
               <a class="social-button" href="#">
                 <span class="visually-hidden">Twitter</span>
