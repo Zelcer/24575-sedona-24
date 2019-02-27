@@ -1041,27 +1041,27 @@ img {
 }
 
 .search-item:nth-child(3) {
+  justify-content: flex-start;
   margin-bottom: 0;
 }
 
 .search-item-label {
   align-self: center;
+  width: 112px;
   margin-top: 5px;
 
   font-weight: 700;
+  text-align: left;
 }
 
 .children-number {
-  margin-left: 27px;
+  width: 118px;
+  text-align: center;
 }
 
 .search-item-number {
   display: -ms-flexbox;
   display: flex;
-}
-
-.adults-number {
-  margin-left: 13px;
 }
 
 .search-item-input {
@@ -1081,6 +1081,7 @@ img {
 
   width: 346px;
   padding: 10px 40px 10px 13px;
+  margin-left: auto;
   box-sizing: border-box;
 
   text-align: left;
