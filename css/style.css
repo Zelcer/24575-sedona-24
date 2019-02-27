@@ -881,12 +881,13 @@ img {
 .final-rating {
   width: 112px;
   margin: 0;
-  padding: 2px 12px 2px 17px;
+  padding: 2px 5px 2px 7px;
   box-sizing: border-box;
 
   line-height: 21px;
   font-weight: 400;
   color: #666666;
+  text-align: center;
 
   background-color: #F2F2F2;
 }
