@@ -549,7 +549,7 @@ img {
 }
 
 .range-data input {
-  width: 31px;
+  width: 40px;
   margin: 0;
   padding: 0;
 
@@ -559,7 +559,7 @@ img {
   border: none;
 }
 
-.range-data input::placeholder {
+.range-data input::-ms-input-placeholder {
   color: #ffffff;
 }
 
@@ -608,7 +608,7 @@ img {
 }
 
 .price-min + input {
-  margin-right: 93px;
+  margin-right: 84px;
 }
 
 .filter-button {
@@ -1013,6 +1013,7 @@ img {
   z-index: 1;
   transform: translateX(-50%);
 
+  display: none;
   width: 568px;
   min-height: 395px;
   padding: 55px;
@@ -1020,6 +1021,10 @@ img {
 
   background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.modal-show {
+  display: block;
 }
 
 .form-search-hotel {
@@ -1056,7 +1061,9 @@ img {
 }
 
 .children-number {
-  width: 118px;
+  width: 83px;
+  padding-left: 35px;
+
   text-align: center;
 }
 
