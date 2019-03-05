@@ -9,13 +9,16 @@ var children = popup.querySelector("[name=children]");
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.toggle("modal-show");
+  popup.classList.remove("modal-error");
   arrival.focus();
 })
 
 form.addEventListener("submit", function (evt) {
-  if (!arrival.value || !departure.value || !adults.value || !children.value) {
+  if (!arrival.value || !departure.value) {
     evt.preventDefault();
-    console.log("Нужно указать даты заеда и выезда, а также колличество взрослых и детей!")
+    popup.classList.remove("modal-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("modal-error");
   }
 })
 
@@ -24,6 +27,7 @@ window.addEventListener("keydown", function (evt) {
     if (popup.classList.contains("modal-show")) {
       evt.preventDefault();
       popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
     }
   }
 })
