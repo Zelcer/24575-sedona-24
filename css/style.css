@@ -208,6 +208,7 @@ img {
 }
 
 .feature-item h2 {
+  width: 120px;
   margin: 0 auto;
   margin-bottom: 23px;
 
@@ -237,6 +238,8 @@ img {
 }
 
 .feature-item-full h2 {
+  width: 151px;
+
   color: #ffffff;
 }
 
@@ -259,6 +262,8 @@ img {
 
 .feature-list-item h2 {
   position: relative;
+
+  width: auto;
 }
 
 .feature-list-item-house h2::after {
@@ -730,106 +735,72 @@ img {
   fill: #81B3D2;
 }
 
-.search-results {
-  width: 100%;
-  
-  border-collapse: collapse;
+/*---Блок с результатом найденного жилья---*/
+
+.results-hotel-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 73px;
+  border-top: 1px solid #cacaca;
 }
 
-.search-results tr {
-  border-top: 1px solid #E5E5E5;
+.results-hotel-row:last-child {
+  border-bottom: 1px solid #cacaca;
 }
 
-.search-results tr:last-child {
-  border-bottom: 1px solid #E5E5E5;
+.hotel-left-column {
+  display: flex;
 }
 
-.search-results td {
-  padding: 27px 73px 31px;
-}
-
-.search-results .table-img {
-  width: 135px;
-  padding-right: 30px;
-}
-
-.table-img img {
-  display: block;
+.hotel-left-column img {
   width: 135px;
   height: 90px;
 }
 
-.search-results .table-description {
-  width: 768px;
-  padding-left: 0;
-  padding-right: 9px;
+.hotel-info {
+  margin-left: 30px;
 }
 
-.search-result-hotel-name,
-.search-result-hotel,
-.hotel-price {
-  margin: 0;
-}
+.hotel-name {
+  display: block;
+  width: 300px;
+  margin: -6px 0 4px;
 
-.search-result-hotel-name {
-  margin-bottom: 6px;
-
-  line-height: 1.24;
-  letter-spacing: 0.2px;
-}
-
-.search-result-hotel-name a {
   font-size: 21px;
+  line-height: 1.24;
   font-weight: 700;
   color: #000000;
-  letter-spacing: 0.2px;
 }
 
-.search-result-hotel-name a:hover,
-.search-result-hotel-name a:focus {
+.hotel-name:hover,
+.hotel-name:focus {
   color: #81B3D2;
 }
 
-.search-result-hotel-name a:active {
+.hotel-name:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.table-hotel-price {
-  display: -ms-flexbox;
+.hotel-middle {
   display: flex;
-          -ms-flex-pack: justify;
   justify-content: space-between;
   width: 180px;
   margin-bottom: 10px;
 }
 
-.search-result-hotel {
-  width: 100px;
+.hotel-middle p {
+  margin: 0;
 }
 
-.search-result-hotel,
-.hotel-price {
-  line-height: 21px;
-  font-weight: 400;
-}
-
-.table-button .button {
+.hotel-button .button {
   display: inline-block;
-  padding: 4px 17px;
-  vertical-align: middle;
 }
 
 .button-more {
-  margin-right: 1px;
-}
+  width: 110px;
 
-.button-more,
-.button-booking {
-  line-height: 21px;
-  font-weight: 700;
-}
+  text-align: center;
 
-.button-more {
   background-color: #81B3D2;
 }
 
@@ -839,12 +810,14 @@ img {
 }
 
 .button-more:active {
-  color: rgba(255, 255, 255, 0.3);
-
   background-color: #5496BD;
 }
 
 .button-booking {
+  width: 142px;
+
+  text-align: center;
+
   background-color: #766357;
 }
 
@@ -854,42 +827,33 @@ img {
 }
 
 .button-booking:active {
-  color: rgba(255, 255, 255, 0.3);
-
   background-color: #503E33;
 }
 
-.search-results .table-rating {
-  padding-left: 0;
-}
-
-.table-rating-wrapper {
-  display: -ms-flexbox;
+.hotel-right-column {
   display: flex;
   flex-direction: column;
 }
 
 .hotel-stars {
-  margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: auto;
 
   font-size: 18px;
+  line-height: 15px;
   text-align: right;
   color: #81B3D2;
 }
 
-.final-rating {
-  width: 112px;
+.hotel-right-column p {
+  width: 102px;
   margin: 0;
-  padding: 2px 5px 2px 7px;
-  box-sizing: border-box;
+  padding: 4px;
 
   line-height: 21px;
-  font-weight: 400;
   color: #666666;
   text-align: center;
 
-  background-color: #F2F2F2;
+  background-color: #fafafa;
 }
 
 /*---Футер---*/
