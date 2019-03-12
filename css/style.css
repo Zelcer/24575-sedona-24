@@ -148,11 +148,9 @@ img {
   min-height: 508px;
   margin-bottom: 62px;
 
-  background-image: 
-    url("../img/welcome-intro.png"),
-    url("../img/jpg/background-intro.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: 50% 76px, 0 -56px;
+  background-image: url("../img/jpg/background-intro.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 -56px;
   background-color: #a7c8de;
 }
 
@@ -167,6 +165,15 @@ img {
   background-image: url("../img/intro-polygon.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.intro-welcome {
+  position: absolute;
+  top: 76px;
+  left: 371px;
+  
+  width: 459px;
+  height: 353px;
 }
 
 .page-title {
