@@ -229,6 +229,11 @@ img {
   background-color: #eeeeee;
 }
 
+.feature-item-last {
+  padding-right: 67px;
+  padding-left: 67px;
+}
+
 .feature-item h2 {
   width: 120px;
   margin: 0 auto;
@@ -912,12 +917,24 @@ img {
 }
 
 .hotel-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-bottom: auto;
 
-  font-size: 18px;
-  line-height: 15px;
-  text-align: right;
-  color: #81B3D2;
+  font-size: 0;
+}
+
+.hotel-stars span {
+  width: 18px;
+  height: 17px;
+  margin-left: 5px;
+
+  background-image: url("../img/svg/star.svg");
+  background-repeat: no-repeat;
 }
 
 .hotel-right-column p {
